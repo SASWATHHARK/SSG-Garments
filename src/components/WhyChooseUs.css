@@ -1,0 +1,57 @@
+/* --- src/components/WhyChooseUs.css --- */
+
+.why-choose-us {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.why-choose-us .section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.why-choose-us-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column on mobile */
+  gap: 2rem;
+  align-items: center;
+}
+
+.why-choose-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.why-choose-us-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-choose-us-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem; /* Larger, clearer text */
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.25rem;
+}
+
+.why-choose-us-list li svg {
+  color: #007bff; /* Primary blue checkmark */
+  margin-right: 0.75rem;
+  flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+/* --- Responsive Styles (768px and up) --- */
+@media (min-width: 768px) {
+  .why-choose-us-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns on desktop */
+    gap: 3rem;
+  }
+  
+  .why-choose-us-list {
+    padding-left: 2rem; /* Adds some space */
+  }
+}

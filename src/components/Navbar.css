@@ -1,0 +1,131 @@
+/* --- src/components/Navbar.css --- */
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0; /* Reduced padding for the logo */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.navbar-logo {
+  text-decoration: none;
+}
+
+/* THIS IS THE FIX */
+.navbar-logo img {
+  height: 100px; /* Set a fixed height */
+  width: auto; /* Let the width adjust automatically */
+  padding: 5px 0; /* Add a little vertical padding */
+}
+
+/* --- Mobile Menu Styles --- */
+
+.navbar-menu {
+  display: none; /* Hide menu on mobile by default */
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 70px; /* Adjust based on navbar height */
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-menu.active {
+  display: flex; /* Show menu when active */
+}
+
+.navbar-link {
+  color: #333;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+/* Hide desktop contact on mobile */
+.navbar-contact {
+  display: none;
+}
+
+/* Hamburger Icon */
+.navbar-toggle {
+  display: block; /* Show on mobile */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.navbar-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* IMPORTANT: We removed the global "img" style from here.
+  Never style "img" globally. Always use a class.
+*/
+
+/* --- Desktop Styles (768px and up) --- */
+@media (min-width: 768px) {
+  
+  /* Hide hamburger on desktop */
+  .navbar-toggle {
+    display: none;
+  }
+
+  /* Show desktop menu */
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+  }
+
+  .navbar-link {
+    padding: 0 1rem;
+  }
+
+  /* Show desktop contact */
+  .navbar-contact {
+    display: block;
+  }
+
+  .navbar-contact a {
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-contact a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+  }
+}

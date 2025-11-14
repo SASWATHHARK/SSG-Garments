@@ -1,0 +1,47 @@
+/* --- src/components/Hero.css --- */
+
+.hero {
+  background-color: #f4f7f6; /* A very light, professional grey/blue */
+  color: #333;
+  text-align: center;
+  padding: 6rem 0; /* Lots of space to feel modern and open */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 800px; /* Constrains the text to be readable */
+}
+
+.hero-title {
+  font-size: 2.5rem; /* Large, bold headline */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  font-size: 1.1rem;
+  padding: 15px 35px; /* A larger, more important button */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Responsive Styles --- */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem; /* Even larger on desktop */
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}

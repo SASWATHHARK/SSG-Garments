@@ -1,0 +1,43 @@
+/* --- src/components/ContactForm.css --- */
+
+.contact-form-section {
+  background-color: #007bff; /* Using the primary blue color */
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-form-content {
+  max-width: 700px;
+}
+
+.contact-form-section .section-title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.contact-form-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.form-btn {
+  background-color: #fff;
+  color: #007bff;
+  font-size: 1.1rem;
+  padding: 15px 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-btn:hover {
+  background-color: #f0f0f0;
+  color: #0056b3;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

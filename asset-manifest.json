@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SSG-Garments/static/css/main.7ca3f651.css",
+    "main.js": "/SSG-Garments/static/js/main.451430a7.js",
+    "index.html": "/SSG-Garments/index.html",
+    "main.7ca3f651.css.map": "/SSG-Garments/static/css/main.7ca3f651.css.map",
+    "main.451430a7.js.map": "/SSG-Garments/static/js/main.451430a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ca3f651.css",
+    "static/js/main.451430a7.js"
+  ]
+}

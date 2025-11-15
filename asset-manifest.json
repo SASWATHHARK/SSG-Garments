@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SSG-Garments/static/css/main.7ca3f651.css",
-    "main.js": "/SSG-Garments/static/js/main.39cb29ad.js",
+    "main.js": "/SSG-Garments/static/js/main.f2a1753c.js",
     "static/media/comanylogo.png": "/SSG-Garments/static/media/comanylogo.5a56d46b55e1c96c769f.png",
     "index.html": "/SSG-Garments/index.html",
     "main.7ca3f651.css.map": "/SSG-Garments/static/css/main.7ca3f651.css.map",
-    "main.39cb29ad.js.map": "/SSG-Garments/static/js/main.39cb29ad.js.map"
+    "main.f2a1753c.js.map": "/SSG-Garments/static/js/main.f2a1753c.js.map"
   },
   "entrypoints": [
     "static/css/main.7ca3f651.css",
-    "static/js/main.39cb29ad.js"
+    "static/js/main.f2a1753c.js"
   ]
 }
